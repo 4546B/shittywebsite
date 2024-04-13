@@ -1,27 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head class="head">
-    <link rel="stylesheet" href="style.css"> 
+<head>
+<!--    <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+        <script src="script.js"></script> -->
     <link rel="stylesheet" href="https://unpkg.com/7.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>p100 code website</title>
-</head>
+    <style>
+/*.meow {
+    background-color: #E1E0E2;
+    opacity: 0.8;
+    height: 150px;
+    width: 300px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+    border: #000000 1px solid;
+    border-radius: 5px;
 
+} */
+body {
+    margin: 0px;
+    min-height: 100vh;
+    background-image: url(img0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: crosshair;
+}
+* {
+    box-sizing: border-box;
+}
+.button {
+    border: white 1px solid;
+    border-radius: 2px;
+    background-color: transparent;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.center {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #000000;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > * {
+    position: relative;
+    z-index: 1;
+}
+
+</style>
+</head>
 <body>
-	<canvas id="canvas"></canvas>
-    <script src="https://unpkg.com/htmx.org@1.9.11"></script>
-	<script src="script.js"></script>
-    <div class="alert">
-        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-        WTF EAC
+
+<div class="container">
+<div class="window active" style="max-width: 300px" >
+  <div class="title-bar">
+    <div class="title-bar-text">graphic design is my passion</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+    <!-- filling the text with blank braille characters is such a stupid fucking hack but it works -->
+    <p>this is not pasted code.⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+  </div>
+</div>
     </div>
 
-
-   <div class="meow">
-	<h2 class="center">design is my passion</h2>
-        <button class="button">button!!!!</button>
-   </div>
-
 </body>
+
 </html>
