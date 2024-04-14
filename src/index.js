@@ -1,10 +1,9 @@
-
 var numbers = [];
 for (var i = 0; i < 100; i++) numbers.push(i);
 
 function rock() {
 fetch(
-  'https://discord.com/api/webhooks/1221173240190468168/s6ksb_in8QRKBlQimufPyd5Kg1_YHPr1m-07Hn5s656zIYz_GHhSpkY1qni1OiKRwXBC',
+  process.env.WEBHOOK_URL,
   {
     method: 'post',
     headers: {
