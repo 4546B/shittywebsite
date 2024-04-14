@@ -36,15 +36,12 @@ fetch(
 }
 
 function valve() {
-const nextURL = 'https://www.easy.ac/en-US/support/game/account/bans'
-  if (document.cookie.includes("niall")) {
-    window.location.assign(nextURL)
-  }
+  if (document.cookie.includes('niall')) {window.location.assign('https://www.easy.ac/en-US/support/game/account/bans')}
 }
 function niall() {
 const nextURL =  'https://www.easy.ac/en-US/support/game/account/bans'
 
-let niallText = "niall is a rock in norway";
+let niallText = "is niall a rock in norway?";
 if (confirm(niallText)) {
   createCookie("niall", "niall", 1);
   if (document.cookie.includes("niall")) {
