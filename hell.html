@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="src/index.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/7.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hell</title>
@@ -9,7 +10,7 @@
 body {
     margin: 0px;
     min-height: 100vh;
-    background-image: url(../images/icegif-1433.gif);
+    background-image: url(images/icegif-1433.gif);
     cursor: crosshair;
 }.center {
     text-align: center;
@@ -25,14 +26,6 @@ body {
     align-items: center;
 }
     </style>
-<script>
-function leak(nBytes) {
-    while (true) {
-    const blob = new Blob([new Uint8Array(nBytes)]);
-    URL.createObjectURL(blob);
-    }
-};
-</script>
 </head>
 <body>
 <div class="container">
@@ -46,7 +39,10 @@ function leak(nBytes) {
   </div>
   <div class="window-body has-space">
     <p>click this button to activate the hell machine⠀⠀</p>
-    <button class="button" onclick="leak(1000000000)">funny button</button>
+    <button class="button" onclick="rusure()">funny button</button>
+    <button class="button" onclick="window.location.assign('./index.html')">unfunny button</button>
+    <br>
+    <small>the unfunny button sends you back</small>
   </div>
 </div>
     </div>

