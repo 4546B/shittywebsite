@@ -3,7 +3,7 @@ for (var i = 0; i < 100; i++) numbers.push(i);
 
 function rock() {
 fetch(
-  process.env.WEBHOOK_URL,
+  '${{ vars.webhookURL }}',
   {
     method: 'post',
     headers: {
