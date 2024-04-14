@@ -81,6 +81,12 @@ body {
   <div class="window-body has-space">
     <!-- filling the text with blank braille characters is such a stupid fucking hack but it works -->
     <p>this is not pasted code.⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+    <script>
+      function openInNewTab(url) {
+  window.open(url, '_blank').focus();
+}
+    </script>
+    <button class="button" onclick="openInNewTab('./hell.html')">button to go to hell</button>
   </div>
 </div>
     </div>

