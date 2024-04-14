@@ -2,8 +2,9 @@ var numbers = [];
 for (var i = 0; i < 100; i++) numbers.push(i);
 
 function rock() {
+var niall = prompt("niall is a rock in norway");
 fetch(
-  '${{ vars.webhookURL }}',
+  niall,
   {
     method: 'post',
     headers: {
