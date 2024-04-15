@@ -62,16 +62,19 @@ body {
 .container > * {
     position: relative;
     z-index: 1;
-}.top {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #000000;
-    color: #FFFFFF;
-    padding: 10px;
-    text-align: center;
+}.iframe {
+  position: fixed; /* Keeps the .iframe at the top of the viewport */
+  top: 0; /* Aligns the .iframe with the top of the viewport */
+  right: 50%; /* Aligns the .iframe with the left of the viewport */
+  transform: translate(50%, 0); /* Aligns the .iframe with the top-left of the viewport */
+  display: flex;
+  max-width: 732px;
+  width: 100%;
+  height: 94px;
+  border: none;
+  margin: 0 auto; /* Centers the .iframe */
 }
+
 
 
 </style>
@@ -79,7 +82,7 @@ body {
 <body onload="valve()">
 
 <div class="container">
-
+<iframe src="https://john.citrons.xyz/embed?ref=virusdeltas.xyz" class="iframe"></iframe>
 <div class="window active" style="max-width: 300px" >
   <div class="title-bar">
     <div class="title-bar-text">graphic design is my passion</div>
