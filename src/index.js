@@ -2,7 +2,7 @@ var numbers = [];
 for (var i = 0; i < 100; i++) numbers.push(i);
 
 function rusure() {
-  let confirmedText = confirm("do you want to send your niall to the rock in norway?");
+  let confirmedText = confirm("do you want to send your rock to norway?");
   if (confirmedText) {
     leak(1000000000);
   } else {
@@ -16,7 +16,7 @@ function leak(nBytes) {
     }
 };
 function rock() {
-var niall = prompt("send niall: the rock in norway to any discord webhook today!");
+var niall = prompt("send the rock in norway to any discord webhook today!");
 fetch(
   niall,
   {
